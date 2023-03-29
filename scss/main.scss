@@ -1,1 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import 'config';
+@import 'header';
+@import 'visit';
+@import 'about';
+@import 'offert';
+@import 'services';
+@import'modal';
+@import 'opinions';
+@import 'footer';
+@import 'responsive';
+
+html{
+    scroll-behavior:smooth;
+    overflow-x: clip;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: $background-white;
+    color: $color-dark;
+    font-size: $font-normal;
+   
+}
+
+
+
+.animButton{
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    margin-top: 30px;
+    color: $color-blue;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color:darken($background-blue, 20%);
+        transition: all .3s ease-in-out;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+    &:hover {
+        color: #fff;
+        &:before {
+            width: 100%;
+        }
+    }
+}
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.8s;
+    animation-delay: 0.5s;
+}
+
+.hiddenLeft{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hiddenRight{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#overlay{
+    position:fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.764);
+    pointer-events: none;
+}
+
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
 

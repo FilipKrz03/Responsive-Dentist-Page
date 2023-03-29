@@ -1,0 +1,11 @@
+.about{
+    .hidden{
+    height: 60vh;
+    background-color: $background-whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    }
+}

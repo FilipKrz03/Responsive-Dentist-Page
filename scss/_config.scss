@@ -1,0 +1,36 @@
+$background-blue:#00b4d8;
+$background-whitesmoke:#dadad1fa;
+$background-white:#fff;
+$font-normal:20px;
+$font-large:26px;
+$font-xl:32px;
+$color-white:#fff;
+$color-blue:#00b4d8;
+$color-dark:#0d1b2a;
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin media-xl{
+    @media (max-width:1300px){
+        @content;
+    }
+}
+
+
+@mixin media-l{
+    @media (max-width : 1150px){
+        @content;
+    }
+}
+
+@mixin media-md{
+    @media (max-width : 880px){
+        @content;
+    }
+}
