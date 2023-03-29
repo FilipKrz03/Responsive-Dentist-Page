@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <script defer src="/src/js/slider.js"></script>
+    <script defer src="/src/js/modal.js"></script>
+    <script defer src="/src/js/fadescroll.js"></script>
+    <script defer src="/src/js/burger.js"></script>
+    <title>Dental</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="/src/img/logo.jpg" alt="logo" class="header_logo" />
+
+      <button class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+      
+      <div class="header_links" id="links">
+        <a href="#dom" class="header_links_item">Dom</a>
+        <a href="#about" class="header_links_item">O nas</a>
+        <a href="#offert" class="header_links_item">Oferta</a>
+        <a href="#services" class="header_links_item">Usługi</a>
+        <a href="#opinions" class="header_links_item">Opinie</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="visit" id="dom">
+        <div class="visit_text">
+          <h1>Miej dostęp do usług dentysty kiedy tylko chcesz !</h1>
+          <p>Zabezpiecz rodzine , zabezpiecz siebie !</p>
+          <button class="animButton">Wykup nasz pakiet specjalny</button>
+        </div>
+
+        <div class="visit_img">
+          <img src="/src/img/doctor-img.png" alt="" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="hidden" id="about_hidden">
+          <h2>O nas</h2>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
+            smod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim venia m, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo c onsequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cill um dolore eu fugiat nulla
+            pariatur. Excepteu r sint occaecat cupidatat non proident, sunt in
+            culpa qui off icia deserunt mollit anim id est laborum."
+          </p>
+          <button class="animButton">Więcej</button>
+        </div>
+      </section>
+
+      <section class="offert" id="offert">
+        <div class="hidden">
+          <h2>Nasz Gabinet</h2>
+          <p>
+            Nasza obsługa to sami profesjonaliści , używamy sprzętu najwyższej
+            jakości !
+          </p>
+
+          <div class="carousel_container" id="carousel">
+            <img src="/src/img/arrow-left.svg" id="prevButton" alt="left" />
+            <img src="/src/img/arrow-right.svg" id="nextButton" alt="right" />
+            <div class="carousel_slide" id="slide">
+              <img src="/src/img/work3.jpg" alt="work" id="lastClone" />
+              <img src="/src/img/work1.jpg" alt="work" />
+              <img src="/src/img/work2.jpg" alt="work" />
+              <img src="/src/img/work3.jpg" alt="work" />
+              <img src="/src/img/work1.jpg" alt="work" id="firstClone" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <h2>Nasze Usługi</h2>
+        <div class="services_box">
+          <div class="services_box_item hiddenLeft">
+            <img src="/src/img/icon-tooth.png" alt="toothIc" />
+            <h2>Borowanie</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, consequatur!
+            </p>
+            <button class="animButton modalMore">Więcej</button>
+          </div>
+          <div class="services_box_item">
+            <img src="/src/img/icon-tooth.png" alt="toothIc" />
+            <h2>Lakowanie</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, consequatur!
+            </p>
+            <button class="animButton modalMore">Więcej</button>
+          </div>
+          <div class="services_box_item hiddenRight">
+            <img src="/src/img/icon-tooth.png" alt="toothIc" />
+            <h2>Leczenie kanałowe</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, consequatur!
+            </p>
+            <button class="animButton modalMore">Więcej</button>
+          </div>
+          <div class="services_box_item hiddenLeft">
+            <img src="/src/img/icon-tooth.png" alt="toothIc" />
+            <h2>Ortodontia</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, consequatur!
+            </p>
+            <button class="animButton modalMore">Więcej</button>
+          </div>
+          <div class="services_box_item">
+            <img src="/src/img/icon-tooth.png" alt="toothIc" />
+            <h2>Sztuczne zęby</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, consequatur!
+            </p>
+            <button class="animButton modalMore">Więcej</button>
+          </div>
+          <div class="services_box_item hiddenRight">
+            <img src="/src/img/icon-tooth.png" alt="toothIc" />
+            <h2>Wyrywanie</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, consequatur!
+            </p>
+            <button class="animButton modalMore">Więcej</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="opinions" id="opinions">
+        <h2>Client Opinions</h2>
+
+        <div class="opinions_container">
+          <div class="opinions_container_item hiddenLeft">
+            <img src="/src/img/opinion-1.png" alt="opinionProfile" />
+            <p>
+              <span class="quote">"</span>Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nulla natus necessitatibus ex plicabo voluptas
+              tempore id officiis culpa , aliquid, labore quod voluptatem
+              tempora ad quo nisi itaque reprehenderit possimus qui quis .<span
+                class="quote"
+                >"</span
+              >
+            </p>
+          </div>
+          <div class="opinions_container_item hiddenRight">
+            <img src="/src/img/opinion-2.png" alt="opinionProfile" />
+            <p>
+              <span class="quote">"</span>Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nulla natus necessitatibus ex plicabo voluptas
+              tempore id officiis culpa asf voluptatem tempora ad quo nisi ,
+              aliquid, labore quod voluptatem tempora ad quo nisi itaque
+              reprehenderit possimus qui quis .<span class="quote">"</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h2 class="hiddenLeft">Find More :</h2>
+      <div class="hiddenRight">
+        <img src="/src/img/facebook.svg" alt="fb" />
+        <img src="/src/img/instagram (1).svg" alt="ig" />
+        <img src="/src/img/pinterest.svg" alt="pinterest" />
+      </div>
+    </footer>
+
+    <div class="modal" id="modal">
+      <img src="/src/img/icon-tooth.png" alt="toothIc" />
+      <h2>Borowanie</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maiores.
+        Officia du cimus rerum, quidem minus facere iusto facilis dignissimos
+        quia beatae molestias aliq uam voluptates sapiente magni mollitia dicta
+        tenetur minima? Asperiores id porro nam, be atae accusamus ut nisi sed
+        sunt. uam voluptates sapiente magni mollitia dicta tenetur minima?
+        Asperiores id porro nam, be atae accusamus ut nisi sed sun uam
+        voluptates sapiente magni mollitia dicta tenetur minima? Asperiores id
+        porro nam, be atae accusamus ut nisi sed sun
+      </p>
+      <img src="/src/img/x-lg.svg" alt="x" id="x" />
+    </div>
+
+    <div id="overlay"></div>
+  </body>
+</html>
