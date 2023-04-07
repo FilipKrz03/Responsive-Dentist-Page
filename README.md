@@ -10,4 +10,4 @@
 
 Made with : SCSS
 
-Live Demo : http://dentales.refy.pl/
+Live Demo : http://dentes.refy.pl/
